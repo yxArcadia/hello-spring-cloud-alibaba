@@ -24,6 +24,7 @@
 
     <modules>
         <module>hello-spring-cloud-alibaba-dependencies</module>
+        <module>hello-spring-cloud-alibaba-provider</module>
     </modules>
     <!--指定开源协议 apache2.0-->
     <licenses>
