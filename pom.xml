@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.2.0.RELEASE</version>
+        <version>2.1.6.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>cn.yxvk</groupId>
     <artifactId>hello-spring-cloud-alibaba</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>hello-spring-cloud-alibaba</name>
-    <description>Demo project for Spring Boot</description>
     <packaging>pom</packaging>
+    <url>http://www.funtl.com</url>
+    <modules>
+        <module>hello-spring-cloud-alibaba-dependencies</module>
+        <module>hello-spring-cloud-alibaba-provider</module>
+        <module>hello-spring-cloud-alibaba-consumer</module>
+    </modules>
     <properties>
         <java.version>1.8</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
@@ -21,27 +25,19 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
-
-    <modules>
-        <module>hello-spring-cloud-alibaba-dependencies</module>
-        <module>hello-spring-cloud-alibaba-provider</module>
-    </modules>
-    <!--指定开源协议 apache2.0-->
     <licenses>
         <license>
             <name>Apache 2.0</name>
             <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
         </license>
     </licenses>
-
     <developers>
         <developer>
-            <id>Yang Xiang</id>
-            <name>Yang Xiang</name>
-            <email>945628094@qq.com</email>
+            <id>liwemin</id>
+            <name>Lusifer Lee</name>
+            <email>lee.lusifer@gmail.com</email>
         </developer>
     </developers>
-    <!--依赖管理-->
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -53,7 +49,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-    <!--多环境配置-->
     <profiles>
         <profile>
             <id>default</id>
@@ -66,7 +61,6 @@
             <build>
                 <plugins>
                     <plugin>
-                        <!--spring风格java代码插件-->
                         <groupId>io.spring.javaformat</groupId>
                         <artifactId>spring-javaformat-maven-plugin</artifactId>
                         <version>${spring-javaformat.version}</version>

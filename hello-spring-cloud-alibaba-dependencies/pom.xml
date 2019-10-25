@@ -6,6 +6,7 @@
     <artifactId>hello-spring-cloud-alibaba-dependencies</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
+    <url>http://www.funtl.com</url>
     <properties>
         <spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
         <spring-cloud-alibaba.version>0.9.0.RELEASE</spring-cloud-alibaba.version>
@@ -18,9 +19,9 @@
     </licenses>
     <developers>
         <developer>
-            <id>Yang Xiang</id>
-            <name>Yang Xiang</name>
-            <email>945628094@qq.com</email>
+            <id>liwemin</id>
+            <name>Lusifer Lee</name>
+            <email>lee.lusifer@gmail.com</email>
         </developer>
     </developers>
     <dependencyManagement>
